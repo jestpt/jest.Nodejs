@@ -2,8 +2,34 @@ function myFunction(x) {
     if (x.matches) {
 
 function dimensões2(){
-
-
+    document.getElementById("infoMYD").style.marginTop=0+ 'px';
+    document.getElementById("infoWDV").style.marginTop=0 + 'px';
+    document.getElementById("infoP").style.marginTop=0+ 'px';
+    document.getElementById("infoR").style.marginTop=0+ 'px';
+    document.querySelector(".quadrado:first-child").style.height='auto';
+    document.querySelector(".quadrado:nth-child(2)").style.height='auto';
+    document.querySelector(".quadrado:nth-child(3)").style.height= 'auto';
+    document.querySelector(".quadrado:nth-child(4)").style.height= 'auto';
+    document.querySelector(".quadrado:nth-child(5)").style.height= 'auto';
+    document.querySelector(".quadrado:nth-child(6)").style.height= 'auto';
+    document.querySelector(".quadrado:nth-child(7").style.height= 'auto';
+    document.querySelector(".quadrado:nth-child(8)").style.height= 'auto';
+    document.querySelector(".quadrado:nth-child(9)").style.height= 'auto';
+    document.querySelector(".quadrado:nth-child(10)").style.height= 'auto';
+    document.querySelector(".quadrado:nth-child(11)").style.height= 'auto';
+    document.querySelector(".quadrado:nth-child(12)").style.height= 'auto';
+    document.querySelector(".quadrado1:nth-child(1)").style.height= 'auto';
+    document.querySelector(".quadrado1:nth-child(2)").style.height= 'auto';
+    document.querySelector(".quadrado1:nth-child(3)").style.height= 'auto';
+    document.querySelector(".quadrado1:nth-child(4)").style.height= 'auto';
+    document.querySelector(".quadrado2:nth-child(1)").style.height= 'auto';
+    document.querySelector(".quadrado2:nth-child(2)").style.height= 'auto';
+    document.querySelector(".quadrado2:nth-child(3)").style.height= 'auto';
+    document.querySelector(".quadrado2:nth-child(4)").style.height= 'auto';
+    document.querySelector(".quadrado2:nth-child(5)").style.height= 'auto';
+    document.querySelector(".quadrado2:nth-child(6)").style.height= 'auto';
+    document.querySelector(".quadrado2:nth-child(7)").style.height= 'auto';
+    document.querySelector(".quadrado2:nth-child(8)").style.height= 'auto';
     document.querySelector(".consulting .titulo").style.height='auto';
     document.querySelector(".training .titulo").style.height='auto';
     document.querySelector(".Data_Science .titulo").style.height='auto';
@@ -28,12 +54,12 @@ dimensões2();
 
         // If media query matches
         var prevScrollpos = window.pageYOffset;
-        window.onscroll = function() {
+        /*window.onscroll = function() {
             document.getElementById("navbar").style.top = "0";
-        };
+        };*/
     } else {
         var prevScrollpos = window.pageYOffset;
-        window.onscroll = function() {
+       /* window.onscroll = function() {
             var currentScrollPos = window.pageYOffset;
             if (prevScrollpos > currentScrollPos) {
                 document.getElementById("navbar").style.top = "0";
@@ -41,7 +67,7 @@ dimensões2();
                 document.getElementById("navbar").style.top = "-360px";
             }
             prevScrollpos = currentScrollPos;
-        };
+        };*/
     }
 }
 
@@ -164,7 +190,27 @@ document.querySelector(".Our_Team").style.height= k+20 +'px';
 
 
 }
+let root= document.documentElement;
 
+window.addEventListener('scroll', function(ev) {
+
+    var someDiv = document.getElementById('about');
+    var distanceToTop = someDiv.getBoundingClientRect().top;
+
+
+    console.log(distanceToTop);
+    if(distanceToTop <= 0){
+        root.style.setProperty('--branco','#1c75bc');
+        root.style.setProperty('--azul', 'white');
+        document.getElementById("logo2").src="img/logoJest.png";
+
+    }
+    if(distanceToTop > 0){
+        root.style.setProperty('--branco','white');
+        root.style.setProperty('--azul', '#1c75bc');
+        document.getElementById("logo2").src= "img/logoJest_Branco.png";
+    }
+});
 /*function temporizador(){
     setTimeout("carrocel()", 5000);
 }

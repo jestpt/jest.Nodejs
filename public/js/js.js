@@ -135,7 +135,7 @@ document.getElementById("infoMYD").style.height= a +'px';
     var b=document.querySelector("nav").clientHeight;
     var d = c / 7;
 var t = document.querySelector(".altura").clientHeight;
-document.querySelector(".events").style.height=t + 'px';
+// document.querySelector(".events").style.height=t + 'px';
 
     document.querySelector(".animação div:nth-child(2)"). style.width= d -2 + 'px';
     document.querySelector(".animação div:nth-child(3)"). style.width= d -2 + 'px';

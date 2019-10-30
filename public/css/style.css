@@ -349,7 +349,7 @@ div {
 }
 
 h2 {
-    font-family: "Bebas Neue";
+    
     color: #5bd2ff;
 }
 
@@ -401,6 +401,7 @@ h2 {
 }
 
 .coluna1 img {
+    
 
     margin-right: 10px;
     float: left;

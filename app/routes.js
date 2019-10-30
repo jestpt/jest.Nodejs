@@ -6,7 +6,6 @@ const apikey = process.env.SENDGRID_API_KEY;
 
 // create application/x-www-form-urlencoded parser
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
-
 // create for our router object
 var router = express.Router();
 

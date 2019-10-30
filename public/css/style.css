@@ -16,6 +16,7 @@ body {
 
 }
 
+
 .icon {
     display: none;
 }
@@ -28,7 +29,7 @@ src(Bebas Neue Normal);
 */
 
 @font-face {
-    font-family: 'Bebas Neue';
+    font-family: "Bebas Neue";
     src: url('fonts/BebasNeue-Regular.woff2') format('woff2'),
          url('fonts/BebasNeue-Regular.woff') format('woff'),
          url('fonts/BebasNeue-Regular.ttf') format('truetype');
@@ -349,7 +350,7 @@ div {
 }
 
 h2 {
-    
+    font-family: "Bebas Neue";
     color: #5bd2ff;
 }
 

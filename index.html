@@ -583,13 +583,13 @@
 
         <div class="menu menu2" id="menu">
             <div class="form">
-                <form>
+                <form method="POST" action="/email">
                     <div class="row">
                         <div class="col-25">
                             <label for="fname">Name</label>
                         </div>
                         <div class="col-75">
-                            <input type="text" id="fname" name="firstname" placeholder="Your name...">
+                            <input type="text" id="fname" name="Name" placeholder="Your name...">
                         </div>
                     </div>
 
@@ -598,7 +598,7 @@
                             <label for="lname">Email</label>
                         </div>
                         <div class="col-75">
-                            <input type="text" id="lname" name="lastname" placeholder="Your Email...">
+                            <input type="text" id="lname" name="Email" placeholder="Your Email...">
                         </div>
                     </div>
 
@@ -607,7 +607,7 @@
                             <label for="subject">Message</label>
                         </div>
                         <div class="col-75">
-                    <textarea id="subject" name="subject" placeholder="Write something..."
+                    <textarea id="subject" name="Message" placeholder="Write something..."
                               style="height:200px"></textarea>
                         </div>
                     </div>

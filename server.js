@@ -7,6 +7,7 @@ var app = express();
 var port = process.env.PORT || 3000;
 
 var router = require('./app/routes');
+require('dotenv/config');
 app.use('/',router);
 //app.use(favicon(__dirname + '/../public/logo.png'));
 

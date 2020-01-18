@@ -2,6 +2,7 @@
 var express = require('express');
 var path = require('path');
 var bodyParser = require('body-parser');
+require('dotenv/config');
 const apikey = process.env.SENDGRID_API_KEY;
 
 // create application/x-www-form-urlencoded parser
@@ -18,16 +19,14 @@ router.get('/home', function(req, res){
 });
 
 router.post('/email',urlencodedParser, function(req, res){
-    // console.log(req.body.Email);
+     //console.log(req.body.Email);
     // console.log(req.body.Message);
     // using SendGrid's v3 Node.js Library
     // https://github.com/sendgrid/sendgrid-nodejs
         const sgMail = require('@sendgrid/mail');
-        
         sgMail.setApiKey(apikey);
-        console.log('Your port is ${SENDGRID_API_KEY}');
         const msgName = "Send by "+req.body.Name + "\n\n" + "----------------------------------------------------" + "\n\n";
-        console.log(msgName);
+        //console.log(msgName);
         const msg = {
             to: 'geral@jest.pt',
             from: req.body.Email,

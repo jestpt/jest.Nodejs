@@ -136,10 +136,14 @@ h1 {
     display: none;
 }
 
-@font-face {
+/* @font-face {
     font-family: "ProFontWindows";
 
-}
+} */
+@font-face {
+    font-family: "ProFontWindows";
+    src: url('fontmyd/PROFONTWINDOWS.ttf') format('truetype');
+  }
 
 html {
     width: 100%;

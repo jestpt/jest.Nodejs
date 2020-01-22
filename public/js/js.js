@@ -2,10 +2,11 @@ function myFunction(x) {
     if (x.matches) {
 
 function dimensões2(){
+    //infos eventos
     document.getElementById("infoMYD").style.marginTop=0+ 'px';
     document.getElementById("infoWDV").style.marginTop=0 + 'px';
     document.getElementById("infoP").style.marginTop=0+ 'px';
-    document.getElementById("infoR").style.marginTop=0+ 'px';
+    //document.getElementById("infoR").style.marginTop=0+ 'px';
     document.querySelector(".quadrado:first-child").style.height='auto';
     document.querySelector(".quadrado:nth-child(2)").style.height='auto';
     document.querySelector(".quadrado:nth-child(3)").style.height= 'auto';
@@ -41,7 +42,7 @@ dimensões2();
             document.querySelector(".stroke ul li:nth-child(3)").classList.toggle("transform");
             document.querySelector(".stroke ul li:nth-child(4)").classList.toggle("transform");
             document.querySelector(".stroke ul li:nth-child(5)").classList.toggle("transform");
-
+            document.querySelector(".stroke ul li:nth-child(6)").classList.toggle("transform");
 
         });
 
@@ -116,15 +117,17 @@ function dimensoes(){
        /*largura janela*/
        var c = window.innerWidth;
        var nav= document.querySelector(".stroke").clientHeight;
+       //infos eventos
        document.getElementById("infoMYD").style.marginTop=nav + 'px';
     document.getElementById("infoWDV").style.marginTop=nav + 'px';
     document.getElementById("infoP").style.marginTop=nav + 'px';
-    document.getElementById("infoR").style.marginTop=nav + 'px';
+    //document.getElementById("infoR").style.marginTop=nav + 'px';
        console.log(a);
+
 document.getElementById("infoMYD").style.height= a +'px';
     document.getElementById("infoWDV").style.height= a +'px';
     document.getElementById("infoP").style.height= a +'px';
-    document.getElementById("infoR").style.height= a+'px';
+    //document.getElementById("infoR").style.height= a+'px';
        document.querySelector(".animação").style.height= a + 'px';
     document.querySelector(".animação1").style.height= a + 'px';
     document.querySelector(".animação1 div:nth-child(2)"). style.height= a/12 + 'px';
@@ -134,8 +137,7 @@ document.getElementById("infoMYD").style.height= a +'px';
     document.querySelector(".animação1 div:nth-child(1)"). style.height= a/12 + 'px';
     var b=document.querySelector("nav").clientHeight;
     var d = c / 7;
-var t = document.querySelector(".altura").clientHeight;
-// document.querySelector(".events").style.height=t + 'px';
+
 
     document.querySelector(".animação div:nth-child(2)"). style.width= d -2 + 'px';
     document.querySelector(".animação div:nth-child(3)"). style.width= d -2 + 'px';
@@ -376,7 +378,7 @@ document.getElementById("fechar3").addEventListener("click", function(){
     document.getElementById("infoP").classList.remove("animação_info");
 });
 
-document.getElementById("item5").addEventListener("click", function () {
+/*document.getElementById("item5").addEventListener("click", function () {
     console.log("animação_info");
     document.getElementById("infoR").classList.add("animação_info");
 
@@ -384,7 +386,7 @@ document.getElementById("item5").addEventListener("click", function () {
 document.getElementById("fechar4").addEventListener("click", function(){
     console.log("fechar");
     document.getElementById("infoR").classList.remove("animação_info");
-});
+});*/
 
 
 document.querySelector(".item2_1").addEventListener("click", function () {
@@ -403,11 +405,12 @@ document.querySelector(".item4_1").addEventListener("click", function () {
     document.getElementById("infoP").classList.add("animação_info");
 
 });
-document.querySelector(".item5_1").addEventListener("click", function () {
+/*document.querySelector(".item5_1").addEventListener("click", function () {
     console.log("animação_info");
     document.getElementById("infoR").classList.add("animação_info");
 
 });
+*/
 var x = window.matchMedia("(max-width: 830px)");
 myFunction(x) ;// Call listener function at run time
 x.addListener(myFunction); // Attach listener function on state changes

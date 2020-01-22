@@ -91,7 +91,14 @@ nav {
     top: 0;
     transition: top 1s;
 }
+input{
+    background:transparent;
+    border:transparent;
+    color:white;
+    font-family:"bebas neue";
+    font-size: 15px;
 
+}
 nav ul li img {
     display: inline-block;
     margin-bottom: 0;

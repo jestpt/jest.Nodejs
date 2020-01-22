@@ -62,6 +62,11 @@ body {
     margin-top:10vh;
 
 }
+input{
+    background:transparent;
+    border:transparent;
+    color:transparent;
+}
 
 .white_background{
     background: rgba(255, 255, 255, 0.1);
@@ -136,10 +141,14 @@ h1 {
     display: none;
 }
 
-@font-face {
+/* @font-face {
     font-family: "ProFontWindows";
 
-}
+} */
+@font-face {
+    font-family: "ProFontWindows";
+    src: url('fontmyd/PROFONTWINDOWS.ttf') format('truetype');
+  }
 
 html {
     width: 100%;

@@ -18,6 +18,10 @@ router.get('/home', function(req, res){
     res.sendFile(path.join(__dirname, '../index.html'));
 });
 
+router.get('/MYD', function(req, res){
+    res.sendFile(path.join(__dirname, '../myd.html'));
+});
+
 router.post('/email',urlencodedParser, function(req, res){
      //console.log(req.body.Email);
     // console.log(req.body.Message);

@@ -2,7 +2,8 @@
 var express = require('express');
 var path = require('path');
 var bodyParser = require('body-parser');
-require('dotenv/config');
+// require('dotenv/config');
+if (process.env.NODE_ENV !== 'production') require('dotenv').config();
 const apikey = process.env.SENDGRID_API_KEY;
 
 // create application/x-www-form-urlencoded parser

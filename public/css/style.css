@@ -91,10 +91,11 @@ nav {
     top: 0;
     transition: top 1s;
 }
-input{
+
+a>form>input{
     background:transparent;
     border:transparent;
-    color:white;
+    color:var(--branco);
     font-family:"bebas neue";
     font-size: 15px;
 

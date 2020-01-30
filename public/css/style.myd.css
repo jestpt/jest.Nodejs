@@ -57,10 +57,18 @@ body {
     height: 400px;
 }
 
+ul>li>a>form>input{
+    width:30px;
+    border-bottom:none;
+}
+
 
 #info{
     margin-top:10vh;
 
+}
+input:focus{
+    outline:0;
 }
 input{
     background:transparent;
@@ -80,7 +88,7 @@ input{
 
 #outrelogio{
     width:100%;
-    margin-top:300px;
+    /* margin-top:300px; */
     font-size: 50px;
 
 
@@ -94,7 +102,6 @@ input{
 }
 
 .about {
-    position: absolute;
     z-index: 1;
 
 
@@ -127,8 +134,6 @@ span {
 
 #info p:not(#relogio) {
     color: white;
-    width: 50%;
-
 }
 
 
@@ -462,7 +467,12 @@ svg{
 .ecra_telemovel{
     display:none;
 }
-@media only screen and (max-width: 400px){
+#esquerda{
+    float:left;
+    left:0;
+    right:auto;
+}
+@media only screen and (max-width: 430px){
     .ecra_principal{
         display:none;
 

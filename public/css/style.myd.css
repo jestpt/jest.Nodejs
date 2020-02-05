@@ -138,7 +138,7 @@ span {
 
 h1 {
     font-family: "ProFontWindows";
-    src: url('fontmyd/PROFONTWINDOWS.ttf') format('truetype');
+    /* src: url('fontmyd/PROFONTWINDOWS.ttf') format('truetype'); */
     color: white;
 }
 
@@ -153,6 +153,7 @@ h1 {
 @font-face {
     font-family: "ProFontWindows";
     src: url('fontmyd/PROFONTWINDOWS.ttf') format('truetype');
+    font-style: normal;
 }
 
 html {
@@ -165,7 +166,7 @@ html {
 
 h1 {
     font-family: "ProFontWindows";
-    src: url('fontmyd/PROFONTWINDOWS.ttf') format('truetype');
+    /* src: url('fontmyd/PROFONTWINDOWS.ttf') format('truetype'); */
     text-justify: distribute-center-last;
 
 }
@@ -184,7 +185,7 @@ scroll-page {
 nav {
 
     font-family: "ProFontWindows";
-    src: url('fontmyd/PROFONTWINDOWS.ttf') format('truetype');
+    /* src: url('fontmyd/PROFONTWINDOWS.ttf') format('truetype'); */
 
     background: transparent;
     webkit-transition: background-color .2s ease;
@@ -298,8 +299,8 @@ main ul li {
     /*z-index:1;*/
 }
 .dsc p{
-    font-family: ProFontWindows;
-    src: url('fontmyd/PROFONTWINDOWS.ttf') format('truetype');
+    font-family: "ProFontWindows";
+    /* src: url('fontmyd/PROFONTWINDOWS.ttf') format('truetype'); */
     color: rgba(255, 255, 255, 1);
     margin-left:32%;
     margin-top:0;
@@ -316,8 +317,8 @@ main ul li {
 
 .footer p{
     color:white;
-    font-family: ProFontWindows;
-    src: url('fontmyd/PROFONTWINDOWS.ttf') format('truetype');
+    font-family: "ProFontWindows";
+    /* src: url('fontmyd/PROFONTWINDOWS.ttf') format('truetype'); */
 }
 .item3, .item4 {
 
@@ -408,8 +409,8 @@ margin-top: 20vh;
 }
 
 form legend{
-    font-family: ProFontWindows;
-    src: url('fontmyd/PROFONTWINDOWS.ttf') format('truetype');
+    font-family: "ProFontWindows";
+    /* src: url('fontmyd/PROFONTWINDOWS.ttf') format('truetype'); */
     color:white;
     font-size:20px;
     margin-bottom:20px;
@@ -417,8 +418,8 @@ form legend{
 form div:not(.container){
     margin-bottom:20px;
     color:white;
-    font-family: ProFontWindows;
-    src: url('fontmyd/PROFONTWINDOWS.ttf') format('truetype');
+    font-family: "ProFontWindows";
+    /* src: url('fontmyd/PROFONTWINDOWS.ttf') format('truetype'); */
 }
 form input{
     color:white;

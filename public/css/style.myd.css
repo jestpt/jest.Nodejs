@@ -152,7 +152,7 @@ h1 {
 } */
 @font-face {
     font-family: 'ProFontWindows';
-    src: url('fontmyd/PROFONTWINDOWS.ttf') format('truetype');
+    src: url('fontmyd/PROFONTWINDOWS.TTF') format('truetype');
     font-style: normal;
 }
 

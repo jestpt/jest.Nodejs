@@ -99,6 +99,11 @@ a>form>input{
     font-family:"bebas neue";
     font-size: 15px;
 
+
+}
+a>form>input:focus{
+    
+outline:none;
 }
 nav ul li img {
     display: inline-block;

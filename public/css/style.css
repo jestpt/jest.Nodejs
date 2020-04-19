@@ -5,28 +5,28 @@
 body {
 
     margin-top: 0;
-    margin: 0;
+    margin:0;
     width: 100%;
     position: relative;
     background: white;
-    font-family: Roboto;
-    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
     background: white;
+    cursor: context-menu;
 
 }
 
+.sublinhado{
+    text-decoration: #5bd2ff underline;
+    cursor: pointer;
+    color: #5bd2ff;
+}
 
 .icon {
     display: none;
 }
 
-/*
-@font-face {
-    font-family: "Bebas Neue";
-src(Bebas Neue Normal);
-}
-*/
+
 
 @font-face {
     font-family: "Bebas Neue";
@@ -92,7 +92,7 @@ nav {
     transition: top 1s;
 }
 
-a>form>input{
+/* a>form>input{
     background:transparent;
     border:transparent;
     color:var(--branco);
@@ -102,9 +102,9 @@ a>form>input{
 
 }
 a>form>input:focus{
-    
+
 outline:none;
-}
+} */
 nav ul li img {
     display: inline-block;
     margin-bottom: 0;
@@ -414,7 +414,7 @@ h2 {
 }
 
 .coluna1 img {
-    
+
 
     margin-right: 10px;
     float: left;
@@ -488,6 +488,8 @@ h2 {
 .Who_Are_We {
     margin-top: -9vw;
     display: inline-block;
+    overflow-y: visible;
+    margin-bottom:4vh;
 
 }
 
@@ -761,33 +763,55 @@ button:focus {
     display: inline-block;
     color: white;
 }
-.item h3{	
-    color:white;	
-}	
-.TI {	
-    background:linear-gradient(to right, #44689e,#7dc7eb);	
-}	
-.FC {	
-    background: linear-gradient(to right, #75c5c1,#74ccf2);	
-}	
-.RH {	
-    background:linear-gradient(to right, #c62455,#f5a462);	
-}	
-.DM {	
-    background: linear-gradient(to right, #f6a321,#f9f290);	
+.item h3{
+    color:white;
+}
+.TI {
+    background:linear-gradient(to right, #44689e,#7dc7eb);
+}
+.FC {
+    background: linear-gradient(to right, #75c5c1,#74ccf2);
+}
+.RH {
+    background:linear-gradient(to right, #c62455,#f5a462);
+}
+.DM {
+    background: linear-gradient(to right, #f6a321,#f9f290);
 }
 
-.DM, .TI, .RH, .FC {
+.DM, .TI, .RH, .FC, .item_readmore {
     width: calc((100% / 4) - 5px);
     display: inline-block;
 
 }
 
-.gallery {
+/*
+recrutamento
+ */
+ .gallery {
     display: inline-block;
     width: 100%;
-
 }
+.instagram, .facebook, .linkedIn{
+    width: calc((100% / 4) - 5px);
+    display: inline-block;
+}
+.desaparecer{
+    display:none;
+}
+.seta{
+    transform: scale(0.8);
+    transition: scale 2s ease-in-out;
+}
+.seta:hover{
+    transform: scale(1);
+}
+.aparecer{
+    display:inherit;
+}
+/*
+fim rerutamento
+ */
 
 /*events*/
 
@@ -1133,68 +1157,142 @@ button:focus {
     text-align: right;
 }
 
-/*telemovel/ tablet menor*/
-@media only screen and (max-height: 830px) and (max-width: 800px){	
-    html {	
-        overflow-x: hidden;	
-    }	
-    .Who_Are_We p {	
-        margin-top: -50vh;	
-    }	
-    .Who_Are_We{	
-        margin-bottom:20%;	
-    }	
+/*recrutamento
+ */
+ .inline{
+    display:inline;
+}
+.h2_recrutamento_2{
+    font-family:Bebas Neue;
+    font-size: 2vw;
+    text-align: center;
+    margin-top:-10vh;
+}
+.h2_recrutamento_1{
+    font-family:Bebas Neue;
+    font-size: 2vw;
+    text-align: center;
+    opacity: 50%;
+    margin-bottom:-8vh;
+}
+.h2_recrutamento{
+    font-family:Bebas Neue;
+    font-size: 4vw;
+    text-align: center;
+}
+.Porque\?{
+    text-align: center;
+    padding-left:5vw;
+    width:100%;
+    display:inline-block;
+}
+.Div1_recrutamento{
+    display:block;
+    clear:both;
+    margin-left:50%;
+    transform: translateX(-50%);
+    width:80%;
+}
+.Div2_recrutamento{
+    display:inline-block;
+    float:left;
+}
+.h2_recrutamento3{
+    color:black;
+    font-family:'Bebas Neue';
+    text-align: Left;
+}
+.p_recrutamento{
+    width:30vw;
+    text-align:left;
+}
+.readmore{
+    display:inline-block;
+    margin-right:1vw;
+    cursor: pointer;
+}
+.img_2{
+    display:inline-block;
+    margin-top:1vh;
+    cursor: pointer;
+}
+.Div3_recrutamento{
+    width:100%;
+}
+.Div4_recutamento{
+    display:inline-block;
+    width:45%;
+    margin-top:5vh;
+}
+.Div5_recrutamento{
+    display:inline-block;
+    float:left;
+    margin-left:20px;
+}
+.Div6_recrutamento{
+    margin-top:5vh;
+}
+@media only screen and (max-width: 800px) {
+    .Who_Are_We p {
+        transform: translateY(0px);
+    }
 }
 
 @media only screen and (max-width: 830px) {
-
-    html {	
-        overflow-x: hidden;	
-    }	
-    #item1,#item2, #item3, #item4, #item5{	
-        pointer-events: none;	
+    html {
+        overflow-x: hidden;
+        width:100%;
     }
-
+    #item1,#item2, #item3, #item4, #item5{
+        pointer-events: none;
+    }
     #tit1 {
-        font-size: 60px;
+        font-size: 15vh;
     }
-
     .tit2 {
         font-size: 40px;
     }
-
     .tit1 {
-        font-size: 40px;
+        font-size: 15vh;
     }
-
     .grande {
         font-size: 40px;
     }
-
     .Who_Are_We p {
-        margin-bottom: 350px;
-        padding-left: 50px;
-        width: 100%;
+        display:block;
+        clear:both;
+        float:none;
+        padding-left:10%;
+        width: 80%;
         font-size: 20px;
     }
-
-    .Who_Are_We {	
-        margin-top:0;	
-        margin-left: 10%;	
-        width: 80%;	
-    }	
-    .Who_Are_We h1 {	
-        font-size: 60px;	
-        width: 90%;	
-        float: none;	
-        scroll-snap-margin-block-end: 0;	
-    }	
-    .who_are {	
-        width: 100%;	
-    }	
-    .we {	
-        width: 100%;	
+    .Who_Are_We {
+        margin-top:0;
+        display:block;
+        clear:both;
+        width:100%;
     }
+    .Who_Are_We h1 {
+        font-size: 15vh;
+        width: 80%;
+        padding-left:10%;
+        float: none;
+        scroll-snap-margin-block-end: 0;
+    }
+    .who_are {
+        width: 100%;
+    }
+    .we {
+        width: 100%;
+    }
+.Our_Team{
+    display:none;
+    width:100%;
+}
+.Our_Team>.tit1{
+    display:block;
+    width:100%;
+}
 
     .coluna1 ul li {
         font-size: 20px;
@@ -1221,15 +1319,20 @@ button:focus {
     /*nav*/
     #navbar {
         top: 0;
-        left: 110px;
 
     }
 
     .stroke {
         top: -360px;
         background: transparent;
-        height:100%;
+        left:100%;
+        transition:transform ease-in-out;
+        transition-duration: 1s;
 
+    }
+
+    .transform {
+        transform: translateX(-100%);
     }
 
     .stroke ul {
@@ -1238,7 +1341,6 @@ button:focus {
         width: 15%;
         float: right;
         clear: both;
-        display: inline;
 
     }
 
@@ -1314,32 +1416,6 @@ button:focus {
         width: 0;
     }
 
-    .transform {
-        transform: translateX(-100%);
-    }
-
-    .stroke ul li:nth-child(2) {
-        transition: transform 0.5s;
-    }
-
-    .stroke ul li:nth-child(3) {
-        transition-delay: 0.5s;
-        transition: transform 0.5s;
-    }
-
-    .stroke ul li:nth-child(4) {
-        transition-delay: 1s;
-        transition: transform 0.5s;
-    }
-
-    .stroke ul li:nth-child(5) {
-        transition-delay: 1.5s;
-        transition: transform 0.5s;
-    }
-    .stroke ul li:nth-child(6) {	
-        transition-delay: 2s;	
-        transition: transform 0.5s;	
-    }
 
     .stroke ul li:not(#logo) a {
         color: var(--azul);
@@ -1372,7 +1448,7 @@ button:focus {
 
     /*what we do*/
     .what_we_do {
-        width: 80%;
+        width: 100%;
     }
 
     #tit1_2 {
@@ -1380,7 +1456,7 @@ button:focus {
     }
 
     .coluna1 {
-        width: 100%;
+        width: 75%;
         clear: both;
     }
 
@@ -1388,7 +1464,7 @@ button:focus {
         width: 100%;
     }
 
-    
+
 
     .Our_Team {
         text-align: center;
@@ -1413,28 +1489,18 @@ button:focus {
     }
 
     .Services {
-        margin-top: 100px;
+        margin-top: -20vh;
         width: 100%;
     }
 
-    .Our_Team h1 {
-        font-size: 60px;
-        margin-top: 0;
-        transform: translateY(0);
-        padding-left: 0;
-        padding-top: 0;
-        float: none;
+    .tit1 {
+        width: 100%;
+    }
+    #about{
+        display:inline;
+        clear:both;
     }
 
-    .tit1 {	
-        top:100px;	
-        font-size: 60px;	
-        width: 100%;	
-    }	
-    #about{	
-        display:inline;	
-        clear:both;	
-    }
 
     .titulo {
         width: 100%;
@@ -1451,12 +1517,12 @@ button:focus {
 
     .tit_hidden {
         display: inherit;
+        font-size:8vh;
 
     }
 
     .tit_hidden h1 {
         color: #5bd2ff;
-        font-size: 60px;
     }
 
     .events {
@@ -1471,8 +1537,66 @@ button:focus {
         width: 800%;
 
     }
-    .A{	
-        display:none;	
+    .A{
+        display:none;
+    }
+    /*
+    Recrutamento
+     */
+    /*
+    Titulos
+     */
+.h2_recrutamento_2{
+    margin-top:0;
+    font-size:5vw;
+}
+.h2_recrutamento_1{
+    margin-bottom:-3vh;
+    font-size:5vw;
+}
+.h2_recrutamento{
+    font-size:7vw;
+}
+/*
+Paragrafos
+ */
+    .p_recrutamento{
+        width:80%;
+    }
+    .Div2_recrutamento{
+       width:100%;
+    }
+    .Div2_recrutamento img{
+        display:none;
+    }
+    .Div4_recutamento{
+        width:100%;
+    }
+    .instagram, .facebook, .linkedIn{
+        width: calc((100% / 2) - 5px);
+        display: inline-block;
+    }
+}
+/*telemovel/ tablet menor*/
+@media only screen and (max-height: 830px) and (max-width: 800px){
+    html {
+        overflow-x: hidden;
+    }
+    .Who_Are_We{
+        margin-bottom:30%;
     }
 
+
 }
+a>form>input {
+    background: transparent;
+    border: transparent;
+    color: var(--branco);
+    font-family: "bebas neue";
+    font-size: 15px;
+}
+
+a>form>input:focus{
+
+    outline:none;
+    }

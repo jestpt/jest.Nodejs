@@ -38,11 +38,7 @@ function dimensões2(){
 dimensões2();
         document.getElementById("icon").addEventListener("click", function() {
             console.log("clica");
-            document.querySelector(".stroke ul li:nth-child(2)").classList.toggle("transform");
-            document.querySelector(".stroke ul li:nth-child(3)").classList.toggle("transform");
-            document.querySelector(".stroke ul li:nth-child(4)").classList.toggle("transform");
-            document.querySelector(".stroke ul li:nth-child(5)").classList.toggle("transform");
-            document.querySelector(".stroke ul li:nth-child(6)").classList.toggle("transform");
+            document.querySelector(".stroke").classList.toggle("transform");
 
         });
 
@@ -481,4 +477,96 @@ var divs=[
     document.getElementById("item5")
 ];
 */
+
+var departamentos= document.getElementById("departamentos");
+var seta= document.getElementById("seta");
+var seta_cima=document.getElementById("seta_cima");
+seta.addEventListener("click",function(){
+    departamentos.classList.remove("desaparecer");
+    departamentos.classList.add("aparecer");
+    seta.classList.remove("aparecer");
+    seta.classList.add("desaparecer");
+});
+seta_cima.addEventListener("click", function(){
+    departamentos.classList.remove("aparecer");
+    departamentos.classList.add("desaparecer");
+    seta.classList.remove("desaparecer");
+    seta.classList.add("aparecer");
+});
+var descricao1=document.getElementById("descricao1");
+var seta1=document.getElementById("seta1");
+var seta_cima1=document.getElementById("seta_cima1");
+seta1.addEventListener("click",function(){
+    descricao1.classList.remove("desaparecer");
+    descricao1.classList.add("aparecer");
+    seta1.classList.remove("aparecer");
+    seta1.classList.add("desaparecer");
+    seta_cima1.classList.remove("desaparecer");
+    seta_cima1.classList.add("aparecer");
+});
+seta_cima1.addEventListener("click", function(){
+    descricao1.classList.remove("aparecer");
+    descricao1.classList.add("desaparecer");
+    seta1.classList.remove("desaparecer");
+    seta1.classList.add("aparecer");
+    seta_cima1.classList.remove("aparecer");
+    seta_cima1.classList.add("desaparecer");
+});
+var descricao2=document.getElementById("descricao2");
+var seta2=document.getElementById("seta2");
+var seta_cima2=document.getElementById("seta_cima2");
+seta2.addEventListener("click",function(){
+    descricao2.classList.remove("desaparecer");
+    descricao2.classList.add("aparecer");
+    seta2.classList.remove("aparecer");
+    seta2.classList.add("desaparecer");
+    seta_cima2.classList.remove("desaparecer");
+    seta_cima2.classList.add("aparecer");
+});
+seta_cima2.addEventListener("click", function(){
+    descricao2.classList.remove("aparecer");
+    descricao2.classList.add("desaparecer");
+    seta2.classList.remove("desaparecer");
+    seta2.classList.add("aparecer");
+    seta_cima2.classList.remove("aparecer");
+    seta_cima2.classList.add("desaparecer");
+});
+var descricao3=document.getElementById("descricao3");
+var seta3=document.getElementById("seta3");
+var seta_cima3=document.getElementById("seta_cima3");
+seta3.addEventListener("click",function(){
+    descricao3.classList.remove("desaparecer");
+    descricao3.classList.add("aparecer");
+    seta3.classList.remove("aparecer");
+    seta3.classList.add("desaparecer");
+    seta_cima3.classList.remove("desaparecer");
+    seta_cima3.classList.add("aparecer");
+});
+seta_cima3.addEventListener("click", function(){
+    descricao3.classList.remove("aparecer");
+    descricao3.classList.add("desaparecer");
+    seta3.classList.remove("desaparecer");
+    seta3.classList.add("aparecer");
+    seta_cima3.classList.remove("aparecer");
+    seta_cima3.classList.add("desaparecer");
+});
+var descricao4=document.getElementById("descricao4");
+var seta4=document.getElementById("seta4");
+var seta_cima4=document.getElementById("seta_cima4");
+seta4.addEventListener("click",function(){
+    descricao4.classList.remove("desaparecer");
+    descricao4.classList.add("aparecer");
+    seta4.classList.remove("aparecer");
+    seta4.classList.add("desaparecer");
+    seta_cima4.classList.remove("desaparecer");
+    seta_cima4.classList.add("aparecer");
+});
+seta_cima4.addEventListener("click", function(){
+    descricao4.classList.remove("aparecer");
+    descricao4.classList.add("desaparecer");
+    seta4.classList.remove("desaparecer");
+    seta4.classList.add("aparecer");
+    seta_cima4.classList.remove("aparecer");
+    seta_cima4.classList.add("desaparecer");
+});
 

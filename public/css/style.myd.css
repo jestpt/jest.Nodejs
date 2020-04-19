@@ -22,6 +22,18 @@ body {
 
 }
 
+.certifiado{
+    width:6vw;
+    margin-left:-1vw;
+    float:left;
+}
+.div_certificado>p{
+    margin-top:2vh;
+}
+.sublinhado{
+    color:white;
+}
+
 /* Track */
 ::-webkit-scrollbar-track {
     background: #52beca;
@@ -52,27 +64,18 @@ body {
     transform: translateX(-50%);
     text-align: left;
     width: 80%;
-
+    margin-top:10vh;
     padding: 20px;
 }
 
-ul>li>a>form>input{
-    width:30px;
-    border-bottom:none;
-}
-
-
-#info{
+#info1{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    text-align: left;
+    width: 80%;
+    padding: 20px;
+    padding-bottom:0;
     margin-top:10vh;
-
-}
-input:focus{
-    outline:0;
-}
-input{
-    background:transparent;
-    border:transparent;
-    color:transparent;
 }
 
 .white_background{
@@ -87,7 +90,7 @@ input{
 
 #outrelogio{
     width:100%;
-    /* margin-top:300px; */
+    /* margin-top:1000px; */
     font-size: 50px;
 
 
@@ -123,7 +126,13 @@ span {
 }
 
 .tit_grande{
-    font-size:50px;
+    font-size:5vw;
+}
+.tit_grande2{
+    font-size:2vw;
+}
+.tit_grande1{
+    font-size:8vw;
 }
 #relogio{
     margin-top:50%;
@@ -311,7 +320,6 @@ main ul li {
     position: relative;
     width: 100%;
     margin-bottom: 0;
-    margin-top: 10%;
 
 }
 
@@ -340,22 +348,25 @@ main ul li {
     z-index:0;
 }
 .edicoes{
-margin-top: 20vh;
     width:100%;
 }
 .edicoes img{
+    margin-top:5%;
     opacity: 100%;
+    margin-bottom:5%;
 }
 .edicoes div{
     background:none;
     display:inline-block;
-    float:left;
-    width:45%;
+    width:40%;
     margin-left:2.5%;
     margin-right:2.5%;
     text-align: center;
 
 
+}
+.segundalinha{
+    margin-top:2.5%;
 }
 
 .edicoes1 div{
@@ -369,6 +380,12 @@ margin-top: 20vh;
 
 
 
+}
+.meio{
+    float:none;
+    display:block;
+    clear:both;
+    width:100%;
 }
 .edicoes1 div h1{
     position:relative;
@@ -389,6 +406,23 @@ margin-top: 20vh;
     color:transparent;
 }
 
+.gallery {
+    display: inline-block;
+    width: 100%;
+}
+.gallery1 {
+    display: inline-block;
+    width: 100%;
+    margin-top:2vh;
+}
+.quarto{
+    width: calc((100% / 4) - 5px);
+    display: inline-block;
+}
+.fundoBranco{
+    background: rgba(255, 255, 255, 0.51);
+    box-shadow: rgba(76, 80, 158, 0.51) 5px 5px 20px;
+}
 
 
 /* inscrições*/
@@ -431,6 +465,7 @@ form input{
 form input[type=submit], input[type=radio], input[type=checkbox]{
     width: inherit;
 }
+
 ::placeholder {
     color: rgba(255, 255, 255, 0.50);
   /* Firefox */
@@ -506,7 +541,7 @@ svg{
         top: -360px;
         background: transparent;
         left:100%;
-        transition: transform 0.5s;
+        transition:transform 0.5s;
     }
     .transform {
         transform: translateX(-100%);
@@ -618,7 +653,6 @@ svg{
 
         width:95%;
         margin:auto;
-        margin-bottom:10vh;
         text-align: center;
 
 
@@ -639,5 +673,55 @@ svg{
         width:100%;
         display:none;
     }
+    .quarto{
+        width: calc((100% / 2) - 5px);
+        display: inline-block;
+    }
+    .pequeno{
+        width:100%;
+        margin-top:0;
+    }
+    .pequeno img{
+        width:50%;
+        height:50%;
+    }
+    .tit_grande{
+        font-size:8vw;
+    }
+    .tit_grande2{
+        font-size:4vw;
+    }
+    .titulos{
+        margin-top: 5vh;
+        margin-bottom:5vh;
+    }
+    .margin-top {
+        margin-top: 10vh;
+    }
+    #info{
+        margin-top: 0;
+        padding:0;
+    }
+
 
 }
+ul>li>a>form>input {
+    width: 30px;
+    border-bottom: none;
+}
+form input {
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid 2px white;
+    width: 100%;
+}
+input {
+    background: transparent;
+    border: transparent;
+    color: transparent;
+}
+a>form>input:focus{
+
+    outline:none;
+    }

@@ -15,7 +15,13 @@ body {
     cursor: context-menu;
 
 }
-
+a>form>input {
+    background: transparent;
+    border: transparent;
+    color: var(--branco);
+    font-family: "bebas neue";
+    font-size: 15px;
+}
 .sublinhado{
     text-decoration: #5bd2ff underline;
     cursor: pointer;
@@ -1239,6 +1245,10 @@ fim rerutamento
 }
 
 @media only screen and (max-width: 830px) {
+    a>form>input{
+        color: var(--azul);
+    }
+
     html {
         overflow-x: hidden;
         width:100%;
@@ -1588,13 +1598,7 @@ Paragrafos
 
 
 }
-a>form>input {
-    background: transparent;
-    border: transparent;
-    color: var(--branco);
-    font-family: "bebas neue";
-    font-size: 15px;
-}
+
 
 a>form>input:focus{
 
